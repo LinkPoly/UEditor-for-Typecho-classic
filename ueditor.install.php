@@ -11,7 +11,7 @@
 
 
 /** 项目地址 */
-$_online_url = 'https://codeload.github.com/linkpoly/UEditor-for-Typecho-classic/zip/master';
+$_online_url = 'https://codeload.github.com/linkpoly/UEditor-for-Typecho-classic/zip/main';
 
 /** 下载到本地的文件名称 */
 $_local_file = '_ueditor_install.zip';
@@ -25,7 +25,7 @@ if( isset($_GET['delete']) ) {
 		unlink('./README.md');
 	}
 	if(file_exists('./'. $_local_file)) {
-		unlink_dir('./'. $_local_file);
+		unlink('./'. $_local_file);
 	}
 	unlink($_SERVER['SCRIPT_FILENAME']);
 
@@ -84,7 +84,7 @@ try {
 	}
 	
 	// 移除子文件夹
-	$dir = "./UEditor-for-Typecho-master/";
+	$dir = "./UEditor-for-Typecho-classic-main/";
 	if (is_dir($dir)) {
 		if ($dh = opendir($dir)) {
 			while (($currfile = readdir($dh)) !== false) {
